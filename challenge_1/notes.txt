@@ -16,7 +16,15 @@ x- run webpack to start bundle
 
 
 
-- Build a React UI that allows the user to search for historical events based on a keyword.
-- Use the full-text search features of json-server to return a result to the UI for browsing.
-- Paginate the list of events using react-paginate, loading no more than ten at a time.
-- Ensure you are implementing server-side pagination  NOT client-side pagination.
+x- Build a React UI that allows the user to search for historical events based on a keyword.
+x- Use the full-text search features of json-server to return a result to the UI for browsing.
+x- Paginate the list of events using react-paginate, loading no more than ten at a time.
+x- Ensure you are implementing server-side pagination  NOT client-side pagination.
+
+
+    "date": "-300",
+    "description": "Pilgrims travel to the healing temples of Asclepieion to be cured of their ills. After a ritual purification the followers bring offerings or sacrifices.",
+    "lang": "en",
+    "category1": "By place",
+    "category2": "Greece",
+    "granularity": "year"
