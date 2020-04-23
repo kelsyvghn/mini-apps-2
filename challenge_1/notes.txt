@@ -10,7 +10,7 @@ x- set up webpack config file
   x- Target webpack to build into the public folder
   x- install babel npm install -g webpack
   x- install dependencies - webpack-cli babel-loader @babel/core @babel/preset-env @babel/preset-react react react-dom
-  **** => make sure the folder is visible to the json-server, but you not need to add the static file location ***
+  **** => make sure the folder is visible to the json-server, but you do not need to add the static file location ***
   x- set up dependencies in the webpack config file
 x- run webpack to start bundle
 
@@ -19,10 +19,15 @@ x- Use the full-text search features of json-server to return a result to the UI
 x- Paginate the list of events using react-paginate, loading no more than ten at a time.
 x- Ensure you are implementing server-side pagination  NOT client-side pagination.
 
+Advanced Content
 
-- That data is messy! Add an edit button on the UI to allow the historical event information to be edited.
+x- That data is messy! Add an edit button on the UI to allow the historical event information to be edited.
+x---> stuck on submitting changes showing up in the console and registering in the state change
   - Allow those edits to be saved back to the server using a save button.
--   Add the feature of "Favoriting" a historical event: when the user favorites an event, they are prompted for a "Favorite Set".
+    - need to find input value now or find a way to search through json data
+      - possibly add routes??
+    - and change that data
+  - Add the feature of "Favoriting" a historical event: when the user favorites an event, they are prompted for a "Favorite Set".
   -The user may select an already existing "Favorite Set" or may wish to create a new "Favorite Set."
   - What's a Favorite Set? Instead of having only one set of favorites, some sites (like Airbnb) allow users to create many sets of favorites, where each set has a unique name.
   - For example, a user might favorite some events into "War Story" favorites and others into "Science Story" favorites.
