@@ -1,0 +1,18 @@
+ x- ReactJS for all views and bundle with Webpack
+  x- setup webpack config file
+  x- install babel to assist in rendering
+  x- install babel-preset-react & babel-preset-env, webpack-cli babel-loader @babel/core @babel/preset-env @babel/preset-react react react-dom
+ x- Express to serve your app and all its assets
+  x- setup nodemon! npm install --save-dev nodemon
+      - **** or remember to RESTART your server every time!
+ x build up html doc
+ x- build up react app render page
+
+ x- The CoinDesk API  to retrieve all your data
+  x- setup API
+   x - endpoint https://api.coindesk.com/v1/bpi/historical/close.json
+  x- test get request to api to render data to source page
+
+ x- ChartJS.org to display your time-series  charts
+- Start building your app using a single, fixed currency symbol, Bitcoin (BTC), and a fixed date range of your choosing. Use a time-series chart and show closing prices only.
+
