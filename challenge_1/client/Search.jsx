@@ -2,6 +2,7 @@ import React from 'react';
 import { ajax } from 'jquery';
 import SearchItem from './SearchItem.jsx';
 import EventsList from './EventsList.jsx';
+import EditList from './EditList.jsx';
 
 class Search extends React.Component {
   constructor(props) {
@@ -12,20 +13,15 @@ class Search extends React.Component {
     this.getEvents = this.getEvents.bind(this);
   }
 componentDidMount() {
-  // let search = 'Pilgrims';
-  this.getEvents();
+    ajax({
+    type: 'GET',
+    url: 'http://localhost:3000/events?_page=7&_limit=10',
+    success: (events) => this.setState({ events }),
+    error: (e) => console.log('error', e),
+  });
 }
 
 getEvents(search) {
-  if (search === undefined) {
-    ajax({
-      type: 'GET',
-      url: 'http://localhost:3000/events?_page=7&_limit=10',
-      data: { search },
-      success: (events) => this.setState({ events }),
-      error: (e) => console.log('error', e),
-    });
-  } else {
     ajax({
       type: 'GET',
       url: `http://localhost:3000/events?_page=7&_limit=10&q=${search}`,
@@ -33,7 +29,6 @@ getEvents(search) {
       success: (events) => this.setState({ events }),
       error: (e) => console.log('error', e),
     });
-  }
 }
   render(){
     const { events } = this.state;
@@ -41,6 +36,7 @@ getEvents(search) {
       <div>
       Search Historical events
       <SearchItem getEvents={this.getEvents} events={events} />
+      <EditList events={events}/>
       <EventsList events={events}/>
       </div>
     )
