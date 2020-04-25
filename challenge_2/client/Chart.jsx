@@ -10,8 +10,8 @@ console.log(data);
     <Line
         data={data}
     options={{
-      maintainAspectRatio: false,
-      responsive: false
+      maintainAspectRatio: true,
+      responsive: true
     }}
     />
     </div>
