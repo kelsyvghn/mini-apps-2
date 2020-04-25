@@ -1,0 +1,22 @@
+x- Use Express to serve up an index.html file and its associated assets
+  x- install express body-parser path
+
+x- Build your UI using ReactJS and bundle with Webpack
+  x- install nodemon react react-dom babel-loader preset-react-env  webpack
+  x- install babel dependencies babel-core babel-loader babel-plugin-transform-runtime babel-preset-env babel-preset-react babel-runtime
+
+- Implement the individual gameplay logic in the client code
+  - first build the board out? (do we need a board?)
+    11 columns, 10 for the frames and one for the total score
+    - each frame should have a small inset for the spare
+    - each fram should also display the total at the bottom for that frame
+  - add input blocks at the bottom for user to select that round's score
+    - there should be 11 numbers, 0-10
+      - don't worry about styling yet, but when you get to it:
+        - make the keys show an impression
+        - block out keys that aren't available after a the first roll (the remaining value for the spare should be all that it's possible to select)
+  - setup the basic logice of bowling
+    -
+
+
+To satisfy the minimum requirements of this challenge, start with a user interface that allows for pin quantity selection only; i.e. the UI allows the player to select the number of pins hit on each bowl, not which pins were hit. Suggestion: create a telephone keypad-style UI that includes '10'. No CSS styling is necessary. Use the browser's default styling for all elements on your page.
