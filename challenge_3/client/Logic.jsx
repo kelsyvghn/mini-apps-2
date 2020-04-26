@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Logic = ({ handleRoll, handleReset, pinsUp }) => {
+const Logic = ({ handleRoll, pinsUp }) => {
   return (
     <div className="logic">
+    <h3>Player 1's Current Bowl</h3>
     <div className="left">
       {[...Array(pinsUp + 1)].map((o, i) => (
         <button key={i} className="roll" onClick={() => handleRoll(i)}>
@@ -11,9 +12,6 @@ const Logic = ({ handleRoll, handleReset, pinsUp }) => {
       ))}
     </div>
     <div className="right">
-      <div className="roll reset" onClick={() => handleReset()}>
-        Reset Game {pinsUp}
-      </div>
     </div>
   </div>
   )

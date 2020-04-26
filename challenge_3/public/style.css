@@ -1,91 +1,4 @@
 
-.App {
-  text-align: center;
-}
-
-
-.score-board {
-  display: flex;
-  margin: 0 50px;
-  min-height: 100px;
-  font-size: 12pt;
-  margin-bottom: 30px;
-}
-
-.frame {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.frame:last-child {
-  flex: 3;
-}
-
-.frame-number {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  background: #bb9;
-}
-
-.frame-score {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.running-score {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.frame:last-child .frame-score {
-  border-right: 1px solid black;
-}
-
-.frame:last-child .running-score {
-  border-right: 1px solid black;
-}
-
-.box {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box.right {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.extra {
-  display: none;
-}
-
-.frame:last-child div.extra {
-  display: flex;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.frame:last-child div.left {
-  border-bottom: 1px solid black;
-}
-
-.frame-score div.right {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
 
 .left {
   display: flex;
@@ -109,16 +22,16 @@
   width: 30px;
   height: 30px;
   border-radius: 10%;
-  border: 1px solid blue;
-  background: lightyellow;
+  border: 1px solid yellow;
+  background: turquoise;
   font-size: 1em;
 }
 
 .roll:hover {
-  border: 1px solid blueviolet;
+  border: 1px solid teal;
 }
 .roll:active {
-  background: lightskyblue;
+  background: palevioletred;
 }
 
 .reset {
@@ -131,4 +44,32 @@
 
 .logic {
   display: flex;
+}
+
+.topPins {
+  align-items: center;
+  position: absolute;
+  left: 200px;
+
+}
+.middlePins {
+  align-items: center;
+  position: relative;
+  left: 225px;
+  top: 150px;
+
+}
+.lowerPins {
+  border-width: 250px;
+  align-items: center;
+  position: relative;
+  left: 250px;
+  top: 150px;
+}
+.bottomPin {
+  border-width: 150px;
+  align-items: center;
+  position: relative;
+  left: 275px;
+  top: 150px;
 }
